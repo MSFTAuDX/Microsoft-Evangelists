@@ -1,0 +1,23 @@
+{
+    "id": "cfd62c6f-68c6-4b71-94f4-9711d7ab444", 
+    "name": "Jordan Knight",
+    "slogan": "Modern workloads, bots, AI, .NET Core and serverless.", 
+    "bio": "Jordan is a Senior Technical Evangelist and professional software developer. He works with software developers and development teams to help them get the most out of modern development platforms and techniques. Before joining Microsoft, Jordan ran a Software development company where they built apps for Xamarin (iOS, Android and Windows), Xbox (360 and One) and countless other platforms.", 
+    "picture": "/Images/jknight.jpg",
+    "website": "https://github.com/jakkaj",
+    "blog": "https://blogs.msdn.microsoft.com/devux/",
+    "twitter": "http://twitter.com/jakkaj",
+    "linkedin": "https://www.linkedin.com/in/jakkaj/",
+    "skype": "skype:jakkaj1",
+    "github": "https://github.com/jakkaj",
+    "stackoverflow": "http://stackoverflow.com/users/243619/jordan",
+    "email": "jordan.knight@microsoft.com",
+    "youtube": "https://www.youtube.com/channel/UCBZoDjE_JTSlq8Y3nXyR1Nw",
+    "vimeo": "",
+    "cities": [ "Sydney", "Melbourne"],
+    "states": [ "Victoria", "NSW" ], 
+    "country": "AU",
+    "tags": [ "Cognitive Services", "Bots", "Azure App Service", "Client App Dev (Xamarin / UWP)", 
+        "Azure Functions", ".NET/ASP.NET Core/C#" ] ,
+    "type": "TE"
+  }

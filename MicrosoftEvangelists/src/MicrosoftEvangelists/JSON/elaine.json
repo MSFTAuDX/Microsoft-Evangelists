@@ -1,0 +1,22 @@
+{
+    "id": "cfd62c6f-68c6-4b71-94f4-9711d7a6543", 
+    "name": "Elaine van Bergen",
+    "slogan": "Office 365, Azure, Bots, SharePoint and other shiny new things", 
+    "bio": "I am a Technical Evangelist within the Developer Experience Group (DX) at Microsoft based in Melbourne. Prior to joining Microsoft I spent a lot of time in the deep depths of SharePoint and Office 365 including becoming a MCM in SharePoint and an Office Servers and Services MVP for 7 years. I’ve worked for large consultancies including Empired and OBS and also spent some time working on the Nintex workflow product way back when it was getting started. Hence I know a fair bit about infrastructure, SQL , authentication and all the other fun things you learn getting SharePoint running at large scale.  More recently I have been focussed on O365 and Azure including  using things like the graph API to grab data from Office 365 into apps in Azure , playing with the new SharePoint Framework and it’s toolchain and building some Bots both standalone and integrating in with Microsoft Teams. Plus I’ve also been lucky enough to travel around a bit and present at a bunch of conferences which is something I have found very enjoyable and rewarding.", 
+    "picture": "/images/elaine.jpg",
+    "website": "https://laneyvb.blog/",
+    "blog": "https://blogs.msdn.microsoft.com/devux/",
+    "twitter": "https://twitter.com/@laneyvb ",
+    "linkedin": "hhttps://www.linkedin.com/in/laneyvb/ ",
+    "skype": "skype:elvanber",
+    "github": "https://github.com/laneyvb ",
+    "stackoverflow": "",
+    "email": "elvanber@microsoft.com",
+    "youtube": "",
+    "vimeo": "",
+    "cities": ["Melbourne"],
+    "states": [ "Victoria"], 
+    "country": "AU",
+    "tags": [  "Cognitive Services", "Conversation-as-a-Platform (bots)", "Azure", "Office 365", "SharePoint" ] ,
+    "type": "TE"
+  }

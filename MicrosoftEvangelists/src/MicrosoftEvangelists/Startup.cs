@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.StaticFiles;
+using MicrosoftEvangelists.Models;
 
 namespace MicrosoftEvangelists
 {
@@ -29,7 +30,7 @@ namespace MicrosoftEvangelists
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSession();
-
+            services.AddSingleton<DocumentDbSettings>(new DocumentDbSettings(Configuration.GetSection("DocumentDB")));
             // Add framework services.
             services.AddMvc();
         }

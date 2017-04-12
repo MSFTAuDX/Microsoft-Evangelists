@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 namespace MicrosoftEvangelists.Models
 {
     public class Profile
@@ -23,7 +23,7 @@ namespace MicrosoftEvangelists.Models
         public string youtube { get; set; }
         public string vimeo { get; set; }
         public List<string> cities { get; set; }
-        public List<string> regions { get; set; }
+        public List<string> states { get; set; }
         public string country { get; set; }
         public List<string> tags { get; set; }
         public string type { get; set; }

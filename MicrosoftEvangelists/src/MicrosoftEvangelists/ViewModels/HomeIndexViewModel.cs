@@ -11,7 +11,7 @@ namespace MicrosoftEvangelists.ViewModels
     {
         public List<Profile> Profiles { get; set; }
 
-        public SelectList AvaliableRegions { get; set; }
+        public SelectList AvaliableStates { get; set; }
 
         public SelectList AvaliableCities { get; set; }
 
@@ -20,7 +20,7 @@ namespace MicrosoftEvangelists.ViewModels
         public SelectList AvaliableCountries { get; set; }
         public string SelectedCountry { get; set; }
 
-        public string SelectedRegion { get; set; }
+        public string SelectedState { get; set; }
         public string SelectedCity { get; set; }
         public string SelectedTag { get; set; }
     }
