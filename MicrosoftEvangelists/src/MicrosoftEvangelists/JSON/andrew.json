@@ -1,5 +1,5 @@
 {
-    "id": "cfd62c6f-68c6-4b71-94f4-9711d7ab4dak", 
+    "id": "andrew", 
     "name": "Andrew Coates",
     "slogan": "It’s all about community.", 
     "bio": "A Civil Engineer by training and a software developer by profession, Andrew Coates has been a Developer Evangelist at Microsoft since early 2004, teaching, learning and sharing coding techniques. During that time, he’s focused on .NET development on the desktop, in the cloud, on the web, on mobile devices and most recently for Office. Andrew has a number of apps in various stores and generally has far too much fun doing his job to honestly be able to call it work. Andrew lives in Sydney, Australia with his wife and two almost-grown-up children.", 
@@ -11,12 +11,11 @@
     "skype": "acoat@messengeruser.com",
     "github": "https://github.com/coatsy",
     "stackoverflow": "http://stackoverflow.com/users/3081992/coatsy",
-    "email": "Andrew.Coates@microsoft.com",
+    "email": "mailto:Andrew.Coates@microsoft.com",
     "youtube": "",
-    "vimeo": "",
-    "cities": [ "Sydney", "Melbourne" ],
-    "states": [ "Victoria", "NSW" ], 
-    "country": "AU",
+    "cities": [ "Sydney", "ALL" ],
+    "states": [ "New South Wales" ], 
+    "country": "Australia",
     "tags": [ "O365Dev", "CaaP", "UWP", "Azure", "PaaS", "Xamarin", "X-Plat", "Community", "Mobile", "IoT", "Bots", "Cognitive Services"], 
     "type": "TE"
   }

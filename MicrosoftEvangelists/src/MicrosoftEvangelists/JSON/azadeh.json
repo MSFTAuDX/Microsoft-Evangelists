@@ -1,0 +1,21 @@
+{
+  "id": "azadeh",
+  "name": "Azadeh Khojandi",
+  "slogan": "Girl geek who supports equality in tech",
+  "bio": "Microsoft certified Sitecore MVP with more than 10 years experience across a range of diverse and exciting web and mobile solutions. Az has worked with clients including Vodafone, KFC Australia, Sydney Airport, Lend Lease, Sydney Olympic park and Ausgrid.",
+  "picture": "/images/az.jpg",
+  "website": "http://azadehkhojandi.blogspot.com.au/",
+  "blog": "https://blogs.msdn.microsoft.com/devux/",
+  "twitter": "https://twitter.com/AzadehKhojandi",
+  "linkedin": "https://www.linkedin.com/in/azadeh-khojandi-ba441b3",
+  "skype": "",
+  "github": "https://github.com/Azadehkhojandi ",
+  "stackoverflow": "http://stackoverflow.com/users/786715/azadeh-khojandi",
+  "email": "mailto:Azadeh.Khojandi@microsoft.com",
+  "youtube": "https://www.youtube.com/user/azadehkhojandi",
+  "cities": [ "Sydney", "ALL" ],
+  "states": [ "New South Wales" ],
+  "country": "Australia",
+  "tags": [ "ASP.NET", "ASP.NET Core", "C#", "Web API", "Design Patterns", "Sitecore", "Umbraco", "CaaP", "Bots", "Azure", "PaaS", "Community", "Diversity", "Web Development", "Angular", "React", "Cognitive Services" ],
+  "type": "TE"
+}
