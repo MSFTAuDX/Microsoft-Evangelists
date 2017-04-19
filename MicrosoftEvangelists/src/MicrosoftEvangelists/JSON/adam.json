@@ -1,0 +1,19 @@
+{
+  "id": "adam",
+  "name": "Adam Raphael",
+  "slogan": "Flying through the Azure cloud with the next wave of tech talent.",
+  "bio": "Adam is a Technical Evangelist with a focus on university students and helping junior developers discover and use Azure, plus other amazing technology. Adam is an avid lover of distruptive technology and is actively learning how to make great bots.",
+  "picture": "/images/araph.jpg",
+  "website": "",
+  "blog": "",
+  "twitter": "http://twitter.com/adehhrr",
+  "linkedin": "https://www.linkedin.com/in/adam-raphael-538717111/",
+  "github": "https://github.com/adehhrr",
+  "email": "mailto:adamraph@microsoft.com",
+  "youtube": "",
+  "cities": [ "Sydney", "Melbourne" ],
+  "states": [ "New South Wales" ],
+  "country": "Australia",
+  "tags": [ "Cognitive Services", "Bot Framework", "Web Dev"],
+  "type": "TE"
+}

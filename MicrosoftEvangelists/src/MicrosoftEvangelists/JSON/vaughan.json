@@ -1,0 +1,21 @@
+{
+  "id": "vaughan",
+  "name": "Vaughan Knight",
+  "slogan": "DX Australia's Technical Evangelist lead, helping businesses keep pace with the rapid and exciting changes in technology.",
+  "bio": "I’ve worked across telco, agency, broadcast, FSI,  doing development team lead and architecture roles.  Consistently have found myself working on cutting edge innovation projects.  Currently working across azure, AI, cognitive services, bots, game dev, and Unity.",
+  "picture": "/images/vaughan.jpg",
+  "website": "http://www.vaughanknight.com/",
+  "blog": "",
+  "twitter": "http://twitter.com/vaughanknight",
+  "linkedin": "https://www.linkedin.com/in/vaughanknight/",
+  "skype": "",
+  "github": "https://github.com/vaughanknight/",
+  "stackoverflow": "http://stackoverflow.com/users/7842475/vaughanknight",
+  "email": "mailto:vknight@microsoft.com",
+  "youtube": "http://youtube.com/vaughanknight",
+  "cities": [ "Sydney", "ALL" ],
+  "states": [ "New South Wales" ],
+  "country": "Australia",
+  "tags": [ "ALL" ],
+  "type": "TE"
+}

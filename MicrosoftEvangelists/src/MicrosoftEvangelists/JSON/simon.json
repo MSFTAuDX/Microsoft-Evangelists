@@ -1,0 +1,21 @@
+{
+  "id": "simon",
+  "name": "Simon Lamb",
+  "slogan": "Riding a magic unicorn named DevOps...",
+  "bio": "Simon works in his dream job as a Technical Evangelist at Microsoft. He has been employed as a solution architect, a team leader and a software engineer but his real passion is helping teams develop and deliver their ideas. To do this he has embraced the core principals of DevOps and now happily evangelises the tools that enabled him to produce software over the last two decades. He lives in Melbourne with his University Lecturer wife and two daughters who also do their fair share of lecturing...",
+  "picture": "/images/simon.jpg",
+  "website": "https://about.me/simonlamb",
+  "blog": "https://simonlamb.codes/",
+  "twitter": "https://twitter.com/slamb2k",
+  "linkedin": "https://www.linkedin.com/in/slamb2k/",
+  "skype": "",
+  "github": "https://github.com/slamb2k/",
+  "stackoverflow": "",
+  "email": "mailto:Simon.Lamb@microsoft.com",
+  "youtube": "",
+  "cities": [ "Melbourne", "ALL" ],
+  "states": [ "Victora" ],
+  "country": "Australia",
+  "tags": [ "DevOps", "Agile", "Azure", "Automation", "ALM", "VSTS", "TFS", "Continuous", "Delivery", "C#", "ASP.NET", "ASP.NET", "Core", "UWP", "Xamarin", "Android" ],
+  "type": "TE"
+}
