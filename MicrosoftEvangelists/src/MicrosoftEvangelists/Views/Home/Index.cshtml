@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-12">
             <h3>@ViewData["Title"]</h3>
-            <p>Here you can find some of the UK-based technical speakers and leading experts on emerging technologies and trends from Microsoft and our MVP community. We offer expert presentations on a wide range of topics and speak at meetups, conferences and community events.</p>
+            <p>Here you can find some of the Australia-based technical speakers and leading experts on emerging technologies and trends from Microsoft</p>
             <p>We try and make ourselves available where possible but sometimes geography, logistics and diaries work against us so it is best if you contact speakers who are geographically near to you initially.</p>
         </div>
         <div class="col-md-12">
@@ -22,8 +22,8 @@
                 </select>
             </div>
             <div class="col-md-3">
-                <label>Region</label>
-                <select asp-items="@Model.AvaliableRegions" asp-for="SelectedRegion" class="form-control" onchange="this.form.submit()">
+                <label>State</label>
+                <select asp-items="@Model.AvaliableStates" asp-for="SelectedState" class="form-control" onchange="this.form.submit()">
                     <option>ALL</option>
                 </select>
             </div>
@@ -49,7 +49,7 @@
 
 <div class="container">
     <h2 class="lightpurple">Microsoft Technical Evangelist</h2>
-    <p>Microsoft Evangelists are people who work directly for Microsoft and have a carry a responsibility around developer and IT Pro outreach across a broad set of technologies. All our evangelists are expert technologists and seasoned speakers.</p>
+    <p>Microsoft Evangelists are people who work directly for Microsoft and have a responsibility around developer and IT Pro outreach across a broad set of technologies.</p>
     @if (Model.Profiles.Where(p => p.type == "TE").Count() > 0)
     {
         <div class="row">
@@ -61,7 +61,7 @@
     }
     else
     {
-        <p>We don't seem to have anyone that can cover that. Please try a less restrictive search or <a href="mailto:ukdxteevang@microsoft.com?Subject=I%20want%20to%20be%20on%20the%20Microsoft%20Evangelists%20site">email us</a></p>
+        <p>We don't seem to have anyone that can cover that. Please try a less restrictive search.</p>
     }
 </div>
 

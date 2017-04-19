@@ -1,0 +1,21 @@
+{
+  "id": "daveb",
+  "name": "David Burela",
+  "slogan": "I love blockchain",
+  "bio": "Coming soon...",
+  "picture": "/images/daveb.jpg",
+  "website": "https://about.me/DavidBurela",
+  "blog": "",
+  "twitter": "https://twitter.com/DavidBurela",
+  "linkedin": "https://www.linkedin.com/in/davidburela/",
+  "skype": "",
+  "github": "https://github.com/DavidBurela",
+  "stackoverflow": "",
+  "email": "mailto:David.Burela@microsoft.com",
+  "youtube": "https://www.youtube.com/channel/UCSw7KfMNcOYApMHoYiMEeBw",
+  "cities": [ "Melbourne", "ALL" ],
+  "states": [ "Victoria" ],
+  "country": "Australia",
+  "tags": [ "ASP.NET", "ASP.NET Core", "C#", "Blockchain", "Azure", "Cloud Computing" ],
+  "type": "TE"
+}

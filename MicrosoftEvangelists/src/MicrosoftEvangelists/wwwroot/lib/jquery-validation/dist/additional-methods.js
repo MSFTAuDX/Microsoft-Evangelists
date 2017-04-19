@@ -173,7 +173,7 @@ $.validator.addMethod( "cifES", function( value ) {
 	 *	P. Local authorities
 	 *	Q. Autonomous bodies, state or not, and the like, and congregations and religious institutions
 	 *	R. Congregations and religious institutions (since 2008 ORDER EHA/451/2008)
-	 *	S. Organs of State Administration and regions
+	 *	S. Organs of State Administration and states
 	 *	V. Agrarian Transformation
 	 *	W. Permanent establishments of non-resident in Spain
 	 */

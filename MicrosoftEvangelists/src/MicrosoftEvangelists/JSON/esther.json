@@ -1,0 +1,21 @@
+﻿{
+  "id": "esther",
+  "name": "Esther Gergis",
+  "slogan": "Startups and Azure are two of my favourite things in the world 😊",
+  "bio": "Esther Gergis is a Technical Evangelist at Microsoft Australia with a particular focus on startups. As the Startup Lead for Microsoft Australia, Esther runs the Microsoft BizSpark program locally, while working heavily with numerous startups across Australia enabling them to make the right technology choices to accelerate their success. My areas of interest are Bots, Cognitive Services, Mobile + Web Apps.",
+  "picture": "/images/esther.jpg",
+  "website": "https://blogs.msdn.microsoft.com/bizspark_au/",
+  "blog": "https://blogs.msdn.microsoft.com/bizspark_au/",
+  "twitter": "https://twitter.com/EstherGergis",
+  "linkedin": "http://www.linkedin.com/in/esthergergis",
+  "skype": "",
+  "github": "",
+  "stackoverflow": "",
+  "email": "mailto:Esther.Mosad@microsoft.com",
+  "youtube": "",
+  "cities": [ "Brisbane", "ALL" ],
+  "states": [ "Queensland" ],
+  "country": "Australia",
+  "tags": [ "Bots", "Cognitive Services", "Startups", "Mobile", "Web" ],
+  "type": "TE"
+}

@@ -43,7 +43,7 @@
                 <hr />
                 I'm into @string.Join(", ", Model.tags)
                 <hr />
-                I'm based in @Model.regions.FirstOrDefault(), @Model.country.
+                I'm based in @Model.states.FirstOrDefault(), @Model.country.
                 @if (Model.cities.Contains("ALL"))
                 {
                     <span> But I cover pretty much anywhere.</span>
@@ -53,7 +53,7 @@
                     <span> I cover @string.Join(", ", Model.cities.Take(3))</span>
                                     @if (Model.cities.Count > 3)
                                     {
-                                        <span> and other places around @string.Join(", ", Model.regions.Where(r => r != "ALL"))</span>
+                                        <span> and other places around @string.Join(", ", Model.states.Where(r => r != "ALL"))</span>
                                     }
                                     <span>. I'm flexible though, contact me for details.</span>
                 }
@@ -91,10 +91,6 @@
                     @if (!string.IsNullOrEmpty(Model.youtube))
                     {
                         <a href="@Model.youtube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a>
-                    }
-                    @if (!string.IsNullOrEmpty(Model.vimeo))
-                    {
-                        <a href="@Model.vimeo"><i class="fa fa-lg fa-vimeo" aria-hidden="true"></i></a>
                     }
                 </div>
                 <a class="btn btn-primary" href="@Model.website" role="button"><i class="fa fa-angle-double-right" aria-hidden="true"></i> See more on my site</a>

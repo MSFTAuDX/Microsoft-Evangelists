@@ -10,35 +10,53 @@ using MicrosoftEvangelists.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net.Http;
 using System.Globalization;
+using System.Net;
+using Microsoft.Azure.Documents;
+using Microsoft.Azure.Documents.Client;
+using Microsoft.Extensions.Options;
 
 namespace MicrosoftEvangelists.Controllers
 {
     public class HomeController : Controller
     {
-        public async Task<IActionResult> Index(string SelectedCountry = "ALL", string SelectedRegion = "ALL", string SelectedCity = "ALL", string SelectedTag = "ALL")
+        private DocumentClient client;
+        DocumentDbSettings settings;
+        public HomeController(DocumentDbSettings _settings)
         {
-            //get data from live file or session
-            if (string.IsNullOrEmpty(ReadSessionData("data")))
+            //dependency injection of Azure DocDB connection settings.
+            settings = _settings;
+        }
+        private List<Profile> ExecuteSimpleQuery(string database, string collection)
+        { 
+            List<Profile> profiles = new List<Profile>();
+            
+            //create Query on Profiles DB,
+            IQueryable<Profile> profileQuery = this.client.CreateDocumentQuery<Profile>(
+                    UriFactory.CreateDocumentCollectionUri(database, collection));
+            
+            //add each profile to List of profiles.
+            foreach (Profile profile in profileQuery)
             {
-                using (var httpClient = new HttpClient())
-                {
-                    var dataUrl = "http://microsoftevangelists.azurewebsites.net/data.json";
-                    httpClient.BaseAddress = new Uri(dataUrl);
-                    var responseMessage = await httpClient.GetAsync(dataUrl);
-                    var responseMessageString = await responseMessage.Content.ReadAsStringAsync();
-                    SetSessionData("data", responseMessageString);
-                }
+                profiles.Add(profile);
             }
-            var data = ReadSessionData("data");
 
+            return profiles;
+            
+        }
+        public async Task<IActionResult> Index(string SelectedCountry = "ALL", string SelectedState = "ALL", string SelectedCity = "ALL", string SelectedTag = "ALL")
+        {
+           //create DB client
+            client = new DocumentClient(settings.DatabaseUri, settings.DatabaseKey);
+            
             //get profiles
-            var allProfiles = JsonConvert.DeserializeObject<List<Profile>>(data);
+            List<Profile> allProfiles = this.ExecuteSimpleQuery(settings.DatabaseName, settings.CollectionName);
 
+            
             //get filtered profiles and randomise order
             var rnd = new Random();
             var filteredProfiles = allProfiles
                 .Where(p => p.country == SelectedCountry || SelectedCountry == "ALL" || p.country.Contains("ALL"))
-                .Where(p => p.regions.Contains(SelectedRegion) || SelectedRegion == "ALL" || p.regions.Contains("ALL"))
+                .Where(p => p.states.Contains(SelectedState) || SelectedState == "ALL" || p.states.Contains("ALL"))
                 .Where(p => p.cities.Contains(SelectedCity) || SelectedCity == "ALL" || p.cities.Contains("ALL"))
                 .Where(p => p.tags.Contains(SelectedTag) || SelectedTag == "ALL" || p.tags.Contains("ALL"))
                 .OrderBy(p => rnd.Next())
@@ -46,13 +64,13 @@ namespace MicrosoftEvangelists.Controllers
 
             //mine data for drop-down values and sort them
             var avaliableCities = allProfiles.SelectMany(p => p.cities).Distinct().ToList();
-            var avaliableRegions = allProfiles.SelectMany(p => p.regions).Distinct().ToList();
+            var avaliableStates = allProfiles.SelectMany(p => p.states).Distinct().ToList();
             var avaliableTags = allProfiles.SelectMany(p => p.tags).Distinct().ToList();
             var avaliableCountries = allProfiles.Select(p => p.country).Distinct().ToList();
             avaliableCities.Sort();
             avaliableCities.Remove("ALL");
-            avaliableRegions.Sort();
-            avaliableRegions.Remove("ALL");
+            avaliableStates.Sort();
+            avaliableStates.Remove("ALL");
             avaliableTags.Sort();
             avaliableTags.Remove("ALL");
             avaliableCountries.Sort();
@@ -60,7 +78,7 @@ namespace MicrosoftEvangelists.Controllers
 
             //create select lists for view
             var avaliableCitiesSelect = new SelectList(avaliableCities);
-            var avaliableRegionsSelect = new SelectList(avaliableRegions);
+            var avaliableStatesSelect = new SelectList(avaliableStates);
             var avaliableTagsSelect = new SelectList(avaliableTags);
             var avaliableCountriesSelect = new SelectList(avaliableCountries);
 
@@ -68,11 +86,11 @@ namespace MicrosoftEvangelists.Controllers
             var vm = new HomeIndexViewModel() {
                 Profiles = filteredProfiles,
                 AvaliableCities = avaliableCitiesSelect,
-                AvaliableRegions = avaliableRegionsSelect,
+                AvaliableStates = avaliableStatesSelect,
                 AvaliableTags = avaliableTagsSelect,
                 AvaliableCountries = avaliableCountriesSelect,
                 SelectedCountry = SelectedCountry,
-                SelectedRegion = SelectedRegion,
+                SelectedState = SelectedState,
                 SelectedCity = SelectedCity,
                 SelectedTag = SelectedTag
             };
@@ -83,7 +101,6 @@ namespace MicrosoftEvangelists.Controllers
 
         public IActionResult Refresh()
         {
-            SetSessionData("data", string.Empty);
             return RedirectToAction("Index");
         }
 

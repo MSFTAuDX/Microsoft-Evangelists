@@ -1,0 +1,21 @@
+{
+  "id": "daveg",
+  "name": "Dave Glover",
+  "slogan": "IoT Devices to Azure Cloud Services, Makers to Enterprise, we've got you covered.",
+  "bio": "Dave Glover is a passionate software developer known to dream in code. Interested in new tech wherever it hails from, with particular interests in low powered embedded platforms, communications and cloud systems. I’m a Developer Evangelist in the Developer Experience (DX) Group and have been at Microsoft for over 23 years in the UK and Australia. I work with partners, customers and the community from IoT devices to Azure cloud based solutions, from Makers to Enterprise Solutions.",
+  "picture": "/images/daveg.jpg",
+  "website": "",
+  "blog": "https://blogs.msdn.microsoft.com/dglover/",
+  "twitter": "https://twitter.com/dglover",
+  "linkedin": "https://www.linkedin.com/in/dgloverau/",
+  "skype": "",
+  "github": "https://github.com/gloveboxes",
+  "stackoverflow": "",
+  "email": "mailto:dglover@microsoft.com",
+  "youtube": "",
+  "cities": [ "Sydney", "ALL" ],
+  "states": [ "New South Wales" ],
+  "country": "Australia",
+  "tags": [ "Internet of Things", "Azure App Services", "Power BI", "Universal Windows Platform" ],
+  "type": "TE"
+}
